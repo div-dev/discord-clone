@@ -2,12 +2,12 @@
 
 import { Plus } from "lucide-react";
 
-import { ActionTooltipProps } from "./action-tooltip";
+import { ActionTooltip } from "@/components/action-tooltip";
 
 export const NavigationAction = () => {
     return (
         <div>
-            <ActionTooltipProps
+            <ActionTooltip
             side="right"
             align="center"
             label="Add a server"
@@ -22,7 +22,7 @@ export const NavigationAction = () => {
                     />
                 </div>
             </button>
-            </ActionTooltipProps>
+            </ActionTooltip>
         </div>
     )
 
