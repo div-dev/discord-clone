@@ -24,7 +24,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-// import { FileUpload } from "@/components/file-upload";
+import { Fileupload } from "@/components/file-upload";
 import { useRouter } from "next/navigation";
 import { useModal } from "@/hooks/use-modal-store";
 
@@ -97,7 +97,11 @@ export const EditServerModal = () => {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                       
+                      <Fileupload 
+                           endpoint ="serverImage"
+                           value={field.value}
+                            onChange={field.onChange}
+                        />
                       </FormControl>
                     </FormItem>
                   )}
